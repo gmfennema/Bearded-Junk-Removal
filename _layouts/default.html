@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | escape }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Alfa+Slab+One&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="64x64" href="{{ '/assets/img/favicon.png' | relative_url }}" />
+    <link rel="apple-touch-icon" href="{{ '/assets/img/favicon.png' | relative_url }}" />
+    {% seo %}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Bearded Junk Removal logo" class="brand__logo" />
+          <span class="brand__text">
+            <span class="brand__name">{{ site.title }}</span>
+            <span class="brand__tagline">{{ site.tagline }}</span>
+          </span>
+        </a>
+        <nav class="primary-nav">
+          <a href="#services">Services</a>
+          <a href="#process">How It Works</a>
+          <a href="#service-area">Service Area</a>
+          <a href="#contact">Get a Quote</a>
+        </nav>
+        <a class="cta-button" href="#contact">Book Now</a>
+      </div>
+    </header>
+    <main>{{ content }}</main>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <strong>{{ site.title }}</strong>
+          <p>{{ site.description }}</p>
+        </div>
+        <div>
+          <p>Email: <a href="mailto:hello@beardedjunkremoval.com">hello@beardedjunkremoval.com</a></p>
+          <p>Phone: <a href="tel:15551234567">(555) 123-4567</a></p>
+        </div>
+        <div class="site-footer__meta">
+          <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

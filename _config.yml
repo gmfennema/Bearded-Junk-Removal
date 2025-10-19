@@ -1,0 +1,15 @@
+title: Bearded Junk Removal
+tagline: Vail and Tucson junk removal with a beard and a smile.
+description: Full-service residential and commercial junk removal serving Vail, Tucson, and Southeast Arizona.
+url: "https://example.com"
+baseurl: ""
+plugins:
+  - jekyll-seo-tag
+sass:
+  sass_dir: assets/css
+  style: compressed
+markdown: kramdown
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
