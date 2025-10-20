@@ -13,3 +13,6 @@ permalink: pretty
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
+  - vendor/*
+  - vendor/**/*
