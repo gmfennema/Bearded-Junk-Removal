@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page.title | escape }} | {{ site.title }}</title>
+    <title>{{ site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace }}" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,7 @@
           <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Bearded Junk Removal logo" class="brand__logo" />
           <span class="brand__text">
             <span class="brand__name">{{ site.title }}</span>
-            <span class="brand__tagline">{{ site.tagline }}</span>
+            <span class="brand__tagline">{{ site.tagline | replace: ' - ', ' -<br>' }}</span>
           </span>
         </a>
         <nav class="primary-nav" aria-label="Primary">
@@ -36,105 +36,99 @@
                 <div class="mega-menu__body">
                   <div class="mega-menu__list" role="list">
                     <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="/tucson/">Tucson, AZ</a>
+                      <a class="mega-menu__location" href="sms:15202701610">Tucson, AZ</a>
                       <div class="mega-menu__panel">
                         <h3>Tucson Services</h3>
                         <ul class="mega-menu__services-list">
-                          <li><a href="/tucson/junk-removal/">Junk Removal</a></li>
-                          <li><a href="/tucson/garage-cleanout/">Garage Cleanout</a></li>
-                          <li><a href="/tucson/furniture-removal/">Furniture Removal</a></li>
-                          <li><a href="/tucson/appliance-hauling/">Appliance Hauling</a></li>
-                          <li><a href="/tucson/construction-debris-removal/">Construction Debris Removal</a></li>
-                          <li><a href="/tucson/estate-cleanout/">Estate Cleanout</a></li>
-                          <li><a href="/tucson/yard-waste-removal/">Yard Waste Removal</a></li>
-                          <li><a href="/tucson/storage-unit-cleanout/">Storage Unit Cleanout</a></li>
+                          <li><a href="sms:15202701610">Junk Removal</a></li>
+                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                          <li><a href="sms:15202701610">Furniture Removal</a></li>
+                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
                         </ul>
-                        <a class="mega-menu__cta" href="/tucson/">View all Tucson pages →</a>
                       </div>
                     </div>
                     <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="/vail/">Vail, AZ</a>
+                      <a class="mega-menu__location" href="sms:15202701610">Vail, AZ</a>
                       <div class="mega-menu__panel">
                         <h3>Vail Services</h3>
                         <ul class="mega-menu__services-list">
-                          <li><a href="/vail/junk-removal/">Junk Removal</a></li>
-                          <li><a href="/vail/garage-cleanout/">Garage Cleanout</a></li>
-                          <li><a href="/vail/furniture-removal/">Furniture Removal</a></li>
-                          <li><a href="/vail/appliance-hauling/">Appliance Hauling</a></li>
-                          <li><a href="/vail/construction-debris-removal/">Construction Debris Removal</a></li>
-                          <li><a href="/vail/estate-cleanout/">Estate Cleanout</a></li>
-                          <li><a href="/vail/yard-waste-removal/">Yard Waste Removal</a></li>
-                          <li><a href="/vail/storage-unit-cleanout/">Storage Unit Cleanout</a></li>
+                          <li><a href="sms:15202701610">Junk Removal</a></li>
+                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                          <li><a href="sms:15202701610">Furniture Removal</a></li>
+                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
                         </ul>
-                        <a class="mega-menu__cta" href="/vail/">View all Vail pages →</a>
                       </div>
                     </div>
                     <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="/rita-ranch/">Rita Ranch, AZ</a>
+                      <a class="mega-menu__location" href="sms:15202701610">Rita Ranch, AZ</a>
                       <div class="mega-menu__panel">
                         <h3>Rita Ranch Services</h3>
                         <ul class="mega-menu__services-list">
-                          <li><a href="/rita-ranch/junk-removal/">Junk Removal</a></li>
-                          <li><a href="/rita-ranch/garage-cleanout/">Garage Cleanout</a></li>
-                          <li><a href="/rita-ranch/furniture-removal/">Furniture Removal</a></li>
-                          <li><a href="/rita-ranch/appliance-hauling/">Appliance Hauling</a></li>
-                          <li><a href="/rita-ranch/construction-debris-removal/">Construction Debris Removal</a></li>
-                          <li><a href="/rita-ranch/estate-cleanout/">Estate Cleanout</a></li>
-                          <li><a href="/rita-ranch/yard-waste-removal/">Yard Waste Removal</a></li>
-                          <li><a href="/rita-ranch/storage-unit-cleanout/">Storage Unit Cleanout</a></li>
+                          <li><a href="sms:15202701610">Junk Removal</a></li>
+                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                          <li><a href="sms:15202701610">Furniture Removal</a></li>
+                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
                         </ul>
-                        <a class="mega-menu__cta" href="/rita-ranch/">View all Rita Ranch pages →</a>
                       </div>
                     </div>
                     <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="/corona-de-tucson/">Corona de Tucson, AZ</a>
+                      <a class="mega-menu__location" href="sms:15202701610">Corona de Tucson, AZ</a>
                       <div class="mega-menu__panel">
                         <h3>Corona de Tucson Services</h3>
                         <ul class="mega-menu__services-list">
-                          <li><a href="/corona-de-tucson/junk-removal/">Junk Removal</a></li>
-                          <li><a href="/corona-de-tucson/garage-cleanout/">Garage Cleanout</a></li>
-                          <li><a href="/corona-de-tucson/furniture-removal/">Furniture Removal</a></li>
-                          <li><a href="/corona-de-tucson/appliance-hauling/">Appliance Hauling</a></li>
-                          <li><a href="/corona-de-tucson/construction-debris-removal/">Construction Debris Removal</a></li>
-                          <li><a href="/corona-de-tucson/estate-cleanout/">Estate Cleanout</a></li>
-                          <li><a href="/corona-de-tucson/yard-waste-removal/">Yard Waste Removal</a></li>
-                          <li><a href="/corona-de-tucson/storage-unit-cleanout/">Storage Unit Cleanout</a></li>
+                          <li><a href="sms:15202701610">Junk Removal</a></li>
+                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                          <li><a href="sms:15202701610">Furniture Removal</a></li>
+                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
                         </ul>
-                        <a class="mega-menu__cta" href="/corona-de-tucson/">View all Corona de Tucson pages →</a>
                       </div>
                     </div>
                     <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="/civano/">Civano, AZ</a>
+                      <a class="mega-menu__location" href="sms:15202701610">Civano, AZ</a>
                       <div class="mega-menu__panel">
                         <h3>Civano Services</h3>
                         <ul class="mega-menu__services-list">
-                          <li><a href="/civano/junk-removal/">Junk Removal</a></li>
-                          <li><a href="/civano/garage-cleanout/">Garage Cleanout</a></li>
-                          <li><a href="/civano/furniture-removal/">Furniture Removal</a></li>
-                          <li><a href="/civano/appliance-hauling/">Appliance Hauling</a></li>
-                          <li><a href="/civano/construction-debris-removal/">Construction Debris Removal</a></li>
-                          <li><a href="/civano/estate-cleanout/">Estate Cleanout</a></li>
-                          <li><a href="/civano/yard-waste-removal/">Yard Waste Removal</a></li>
-                          <li><a href="/civano/storage-unit-cleanout/">Storage Unit Cleanout</a></li>
+                          <li><a href="sms:15202701610">Junk Removal</a></li>
+                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                          <li><a href="sms:15202701610">Furniture Removal</a></li>
+                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
                         </ul>
-                        <a class="mega-menu__cta" href="/civano/">View all Civano pages →</a>
                       </div>
                     </div>
                     <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="/rancho-del-lago/">Rancho del Lago, AZ</a>
+                      <a class="mega-menu__location" href="sms:15202701610">Rancho del Lago, AZ</a>
                       <div class="mega-menu__panel">
                         <h3>Rancho del Lago Services</h3>
                         <ul class="mega-menu__services-list">
-                          <li><a href="/rancho-del-lago/junk-removal/">Junk Removal</a></li>
-                          <li><a href="/rancho-del-lago/garage-cleanout/">Garage Cleanout</a></li>
-                          <li><a href="/rancho-del-lago/furniture-removal/">Furniture Removal</a></li>
-                          <li><a href="/rancho-del-lago/appliance-hauling/">Appliance Hauling</a></li>
-                          <li><a href="/rancho-del-lago/construction-debris-removal/">Construction Debris Removal</a></li>
-                          <li><a href="/rancho-del-lago/estate-cleanout/">Estate Cleanout</a></li>
-                          <li><a href="/rancho-del-lago/yard-waste-removal/">Yard Waste Removal</a></li>
-                          <li><a href="/rancho-del-lago/storage-unit-cleanout/">Storage Unit Cleanout</a></li>
+                          <li><a href="sms:15202701610">Junk Removal</a></li>
+                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                          <li><a href="sms:15202701610">Furniture Removal</a></li>
+                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
                         </ul>
-                        <a class="mega-menu__cta" href="/rancho-del-lago/">View all Rancho del Lago pages →</a>
                       </div>
                     </div>
                   </div>
@@ -143,10 +137,9 @@
             </div>
             <a class="primary-nav__link" href="#process">How It Works</a>
             <a class="primary-nav__link" href="#about">About</a>
-            <a class="primary-nav__link" href="#contact">Get a Quote</a>
           </div>
         </nav>
-        <a class="cta-button" href="#contact">Book Now</a>
+        <a class="cta-button" href="sms:15202701610">Text "junk" to 5202701610</a>
       </div>
     </header>
     <main>{{ content }}</main>

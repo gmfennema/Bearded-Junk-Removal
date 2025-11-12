@@ -52,7 +52,7 @@ img {
   &__inner {
     display: flex;
     align-items: center;
-    gap: 1.75rem;
+    gap: 2.5rem;
     padding: 0.75rem 0;
     flex-wrap: nowrap;
   }
@@ -75,14 +75,17 @@ img {
 
   &__text {
     display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
   }
 
   &__name {
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 0.07em;
+    white-space: nowrap;
   }
 
   &__tagline {
@@ -91,6 +94,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: $color-mid;
+    line-height: 1.3;
   }
 }
 
@@ -147,25 +151,18 @@ img {
     transition: border-top-color 0.2s ease, transform 0.2s ease;
   }
 
-  &__item--mega:hover .primary-nav__link--trigger::after,
+  &__link--trigger:hover::after,
   &__item--mega:focus-within .primary-nav__link--trigger::after {
     border-top-color: $color-primary;
     transform: translateY(-30%) rotate(180deg);
-  }
-
-  &__item--mega:hover .mega-menu,
-  &__item--mega:focus-within .mega-menu {
-    opacity: 1;
-    transform: translate(-50%, 0);
-    pointer-events: auto;
   }
 }
 
 .mega-menu {
   position: absolute;
-  top: calc(100% + 1rem);
+  top: calc(100% + 0.5rem);
   left: 50%;
-  transform: translate(-50%, -8px);
+  transform: translate(-50%, -20px);
   width: min(1000px, 94vw);
   background: white;
   border-radius: 22px;
@@ -176,7 +173,22 @@ img {
   gap: 1.5rem;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.15s ease 0.2s, transform 0.15s ease 0.2s, visibility 0s ease 0.35s, max-height 0.15s ease 0.2s;
+  z-index: 1000;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.primary-nav__link--trigger:hover ~ .mega-menu,
+.primary-nav__item--mega:focus-within .mega-menu,
+.primary-nav__item--mega .mega-menu:hover {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  pointer-events: auto;
+  visibility: visible;
+  max-height: 1000px;
+  transition: opacity 0.15s ease 0s, transform 0.15s ease 0s, visibility 0s ease 0s, max-height 0.15s ease 0s;
 }
 
 .mega-menu__intro {
@@ -282,8 +294,8 @@ img {
   transform: translateX(0);
 }
 
-.mega-menu__list:hover .mega-menu__option:first-child .mega-menu__panel,
-.mega-menu__list:focus-within .mega-menu__option:first-child .mega-menu__panel {
+.mega-menu__list:hover .mega-menu__option:first-child:not(:hover) .mega-menu__panel,
+.mega-menu__list:focus-within .mega-menu__option:first-child:not(:focus-within) .mega-menu__panel {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -369,6 +381,8 @@ img {
   transition: transform 0.2s ease, background 0.2s ease;
   margin-left: 1.25rem;
   flex-shrink: 0;
+  white-space: nowrap;
+  min-width: fit-content;
 
   &:hover,
   &:focus {
@@ -542,6 +556,63 @@ img {
 
   h3 {
     margin-top: 0;
+  }
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 2px solid rgba(15, 23, 42, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 2rem;
+  background: white;
+}
+
+.services-column {
+  padding: 2rem 1.75rem;
+  border-right: 2px solid rgba(15, 23, 42, 0.1);
+
+  &:last-child {
+    border-right: none;
+  }
+
+  h3 {
+    margin: 0 0 1.25rem 0;
+    font-family: "Alfa Slab One", cursive;
+    font-size: 1.35rem;
+    color: $color-secondary;
+    letter-spacing: 0.02em;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  li {
+    color: $color-mid;
+    font-size: 1rem;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-column {
+    border-right: none;
+    border-bottom: 2px solid rgba(15, 23, 42, 0.1);
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 
@@ -762,11 +833,28 @@ img {
   color: $color-mid;
 }
 
+@media (max-width: 1100px) {
+  .site-header__inner {
+    gap: 1.25rem;
+  }
+  
+  .brand__tagline {
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .site-header__inner {
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 840px) {
   .site-header__inner {
     flex-wrap: wrap;
     gap: 1rem;
     padding: 0.55rem 0;
+    justify-content: space-between;
   }
 
   .primary-nav {
@@ -780,11 +868,19 @@ img {
       font-size: 0.95rem;
       padding: 0.35rem 0.55rem;
     }
+    
+    a[href="#process"],
+    a[href="#about"] {
+      display: none;
+    }
   }
 
   .cta-button {
     order: 2;
     margin-left: 0;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    padding: 0.55rem 1rem;
   }
 
   .brand__logo {
@@ -792,7 +888,8 @@ img {
   }
 
   .brand__text {
-    gap: 0.15rem;
+    gap: 0.35rem;
+    flex-direction: row;
   }
 
   .brand__name {
