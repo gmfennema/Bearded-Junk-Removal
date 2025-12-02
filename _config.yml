@@ -3,8 +3,11 @@ tagline: VAIL AND TUCSON JUNK REMOVAL - WE MAKE YOUR LIFE EASIER
 description: Full-service residential and commercial junk removal serving Vail, Tucson, and Southeast Arizona.
 url: "https://beardedjunkremoval.com"
 baseurl: ""
+logo: /assets/img/logo.png
+image: /assets/img/logo.png
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 sass:
   sass_dir: assets/css
   style: compressed

@@ -1,162 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace }}" />
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Alfa+Slab+One&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/png" sizes="64x64" href="{{ '/assets/img/favicon.png' | relative_url }}" />
-    <link rel="apple-touch-icon" href="{{ '/assets/img/favicon.png' | relative_url }}" />
-    {% seo %}
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container site-header__inner">
-        <a class="brand" href="{{ '/' | relative_url }}">
-          <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Bearded Junk Removal logo" class="brand__logo" />
-          <span class="brand__text">
-            <span class="brand__name">{{ site.title }}</span>
-            <span class="brand__tagline">{{ site.tagline | replace: ' - ', ' -<br>' }}</span>
-          </span>
-        </a>
-        <nav class="primary-nav" aria-label="Primary">
-          <div class="primary-nav__links">
-            <div class="primary-nav__item primary-nav__item--mega">
-              <a class="primary-nav__link primary-nav__link--trigger" href="/locations">Locations &amp; Services</a>
-              <div class="mega-menu" aria-label="Locations and services menu">
-                <div class="mega-menu__intro">
-                  <p>Choose a neighborhood to explore ultra-targeted pages for every cleanup service we offer.</p>
-                  <span class="mega-menu__availability">Serving Monday – Saturday, 8am to 6pm</span>
-                </div>
-                <div class="mega-menu__body">
-                  <div class="mega-menu__list" role="list">
-                    <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="sms:15202701610">Tucson, AZ</a>
-                      <div class="mega-menu__panel">
-                        <h3>Tucson Services</h3>
-                        <ul class="mega-menu__services-list">
-                          <li><a href="sms:15202701610">Junk Removal</a></li>
-                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
-                          <li><a href="sms:15202701610">Furniture Removal</a></li>
-                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
-                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
-                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
-                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
-                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
-                        </ul>
-                      </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Alfa+Slab+One&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="64x64" href="{{ '/assets/img/favicon.png' | relative_url }}" />
+  <link rel="apple-touch-icon" href="{{ '/assets/img/favicon.png' | relative_url }}" />
+  {% seo %}
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Bearded Junk Removal logo" class="brand__logo" />
+        <span class="brand__text">
+          <span class="brand__name">{{ site.title }}</span>
+          <span class="brand__tagline">{{ site.tagline | replace: ' - ', ' -<br>' }}</span>
+        </span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <div class="primary-nav__links">
+          <div class="primary-nav__item primary-nav__item--mega">
+            <a class="primary-nav__link primary-nav__link--trigger" href="/locations">Locations &amp; Services</a>
+            <div class="mega-menu" aria-label="Locations and services menu">
+              <div class="mega-menu__intro">
+                <p>Choose a neighborhood to explore ultra-targeted pages for every cleanup service we offer.</p>
+                <span class="mega-menu__availability">Serving Monday – Saturday, 8am to 6pm</span>
+              </div>
+              <div class="mega-menu__body">
+                <div class="mega-menu__list" role="list">
+                  <div class="mega-menu__option" role="listitem">
+                    <a class="mega-menu__location" href="sms:15202701610">Tucson, AZ</a>
+                    <div class="mega-menu__panel">
+                      <h3>Tucson Services</h3>
+                      <ul class="mega-menu__services-list">
+                        <li><a href="sms:15202701610">Junk Removal</a></li>
+                        <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                        <li><a href="sms:15202701610">Furniture Removal</a></li>
+                        <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                        <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                        <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                        <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                        <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
+                      </ul>
                     </div>
-                    <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="sms:15202701610">Vail, AZ</a>
-                      <div class="mega-menu__panel">
-                        <h3>Vail Services</h3>
-                        <ul class="mega-menu__services-list">
-                          <li><a href="sms:15202701610">Junk Removal</a></li>
-                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
-                          <li><a href="sms:15202701610">Furniture Removal</a></li>
-                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
-                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
-                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
-                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
-                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
-                        </ul>
-                      </div>
+                  </div>
+                  <div class="mega-menu__option" role="listitem">
+                    <a class="mega-menu__location" href="sms:15202701610">Vail, AZ</a>
+                    <div class="mega-menu__panel">
+                      <h3>Vail Services</h3>
+                      <ul class="mega-menu__services-list">
+                        <li><a href="sms:15202701610">Junk Removal</a></li>
+                        <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                        <li><a href="sms:15202701610">Furniture Removal</a></li>
+                        <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                        <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                        <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                        <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                        <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
+                      </ul>
                     </div>
-                    <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="sms:15202701610">Rita Ranch, AZ</a>
-                      <div class="mega-menu__panel">
-                        <h3>Rita Ranch Services</h3>
-                        <ul class="mega-menu__services-list">
-                          <li><a href="sms:15202701610">Junk Removal</a></li>
-                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
-                          <li><a href="sms:15202701610">Furniture Removal</a></li>
-                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
-                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
-                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
-                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
-                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
-                        </ul>
-                      </div>
+                  </div>
+                  <div class="mega-menu__option" role="listitem">
+                    <a class="mega-menu__location" href="sms:15202701610">Rita Ranch, AZ</a>
+                    <div class="mega-menu__panel">
+                      <h3>Rita Ranch Services</h3>
+                      <ul class="mega-menu__services-list">
+                        <li><a href="sms:15202701610">Junk Removal</a></li>
+                        <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                        <li><a href="sms:15202701610">Furniture Removal</a></li>
+                        <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                        <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                        <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                        <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                        <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
+                      </ul>
                     </div>
-                    <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="sms:15202701610">Corona de Tucson, AZ</a>
-                      <div class="mega-menu__panel">
-                        <h3>Corona de Tucson Services</h3>
-                        <ul class="mega-menu__services-list">
-                          <li><a href="sms:15202701610">Junk Removal</a></li>
-                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
-                          <li><a href="sms:15202701610">Furniture Removal</a></li>
-                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
-                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
-                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
-                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
-                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
-                        </ul>
-                      </div>
+                  </div>
+                  <div class="mega-menu__option" role="listitem">
+                    <a class="mega-menu__location" href="sms:15202701610">Corona de Tucson, AZ</a>
+                    <div class="mega-menu__panel">
+                      <h3>Corona de Tucson Services</h3>
+                      <ul class="mega-menu__services-list">
+                        <li><a href="sms:15202701610">Junk Removal</a></li>
+                        <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                        <li><a href="sms:15202701610">Furniture Removal</a></li>
+                        <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                        <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                        <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                        <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                        <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
+                      </ul>
                     </div>
-                    <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="sms:15202701610">Civano, AZ</a>
-                      <div class="mega-menu__panel">
-                        <h3>Civano Services</h3>
-                        <ul class="mega-menu__services-list">
-                          <li><a href="sms:15202701610">Junk Removal</a></li>
-                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
-                          <li><a href="sms:15202701610">Furniture Removal</a></li>
-                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
-                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
-                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
-                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
-                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
-                        </ul>
-                      </div>
+                  </div>
+                  <div class="mega-menu__option" role="listitem">
+                    <a class="mega-menu__location" href="sms:15202701610">Civano, AZ</a>
+                    <div class="mega-menu__panel">
+                      <h3>Civano Services</h3>
+                      <ul class="mega-menu__services-list">
+                        <li><a href="sms:15202701610">Junk Removal</a></li>
+                        <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                        <li><a href="sms:15202701610">Furniture Removal</a></li>
+                        <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                        <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                        <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                        <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                        <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
+                      </ul>
                     </div>
-                    <div class="mega-menu__option" role="listitem">
-                      <a class="mega-menu__location" href="sms:15202701610">Rancho del Lago, AZ</a>
-                      <div class="mega-menu__panel">
-                        <h3>Rancho del Lago Services</h3>
-                        <ul class="mega-menu__services-list">
-                          <li><a href="sms:15202701610">Junk Removal</a></li>
-                          <li><a href="sms:15202701610">Garage Cleanout</a></li>
-                          <li><a href="sms:15202701610">Furniture Removal</a></li>
-                          <li><a href="sms:15202701610">Appliance Hauling</a></li>
-                          <li><a href="sms:15202701610">Construction Debris Removal</a></li>
-                          <li><a href="sms:15202701610">Estate Cleanout</a></li>
-                          <li><a href="sms:15202701610">Yard Waste Removal</a></li>
-                          <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
-                        </ul>
-                      </div>
+                  </div>
+                  <div class="mega-menu__option" role="listitem">
+                    <a class="mega-menu__location" href="sms:15202701610">Rancho del Lago, AZ</a>
+                    <div class="mega-menu__panel">
+                      <h3>Rancho del Lago Services</h3>
+                      <ul class="mega-menu__services-list">
+                        <li><a href="sms:15202701610">Junk Removal</a></li>
+                        <li><a href="sms:15202701610">Garage Cleanout</a></li>
+                        <li><a href="sms:15202701610">Furniture Removal</a></li>
+                        <li><a href="sms:15202701610">Appliance Hauling</a></li>
+                        <li><a href="sms:15202701610">Construction Debris Removal</a></li>
+                        <li><a href="sms:15202701610">Estate Cleanout</a></li>
+                        <li><a href="sms:15202701610">Yard Waste Removal</a></li>
+                        <li><a href="sms:15202701610">Storage Unit Cleanout</a></li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <a class="primary-nav__link" href="#process">How It Works</a>
-            <a class="primary-nav__link" href="#about">About</a>
           </div>
-        </nav>
-        <a class="cta-button" href="sms:15202701610">Text "junk" to 5202701610</a>
+          <a class="primary-nav__link" href="#process">How It Works</a>
+          <a class="primary-nav__link" href="#about">About</a>
+        </div>
+      </nav>
+      <a class="cta-button" href="sms:15202701610">Text "junk" to 5202701610</a>
+    </div>
+  </header>
+  <main>{{ content }}</main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <strong>{{ site.title }}</strong>
+        <p>{{ site.description }}</p>
       </div>
-    </header>
-    <main>{{ content }}</main>
-    <footer class="site-footer">
-      <div class="container site-footer__inner">
-        <div>
-          <strong>{{ site.title }}</strong>
-          <p>{{ site.description }}</p>
-        </div>
-        <div>
-          <p>Email: <a href="mailto:reevesmanagementsolutions@gmail.com">reevesmanagementsolutions@gmail.com</a></p>
-          <p>Phone: <a href="tel:15202701610">(520) 270-1610</a></p>
-        </div>
-        <div class="site-footer__meta">
-          <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-        </div>
+      <div>
+        <p>Email: <a href="mailto:reevesmanagementsolutions@gmail.com">reevesmanagementsolutions@gmail.com</a></p>
+        <p>Phone: <a href="tel:15202701610">(520) 270-1610</a></p>
       </div>
-    </footer>
-  </body>
+      <div class="site-footer__meta">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
