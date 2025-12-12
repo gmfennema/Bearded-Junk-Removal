@@ -15,6 +15,24 @@
   <link rel="icon" type="image/png" sizes="64x64" href="{{ '/assets/img/favicon.png' | relative_url }}" />
   <link rel="apple-touch-icon" href="{{ '/assets/img/favicon.png' | relative_url }}" />
   {% seo %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "{{ site.title }}",
+      "image": "{{ '/assets/img/family.jpg' | absolute_url }}",
+      "telephone": "520-270-1610",
+      "email": "reevesmanagementsolutions@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vail",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
+      },
+      "url": "{{ site.url }}",
+      "priceRange": "$$"
+    }
+  </script>
 </head>
 
 <body>
