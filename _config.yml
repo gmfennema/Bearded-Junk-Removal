@@ -4,7 +4,7 @@ description: Full-service residential and commercial junk removal serving Vail, 
 url: "https://beardedjunkremoval.com"
 baseurl: ""
 logo: /assets/img/logo.png
-image: assets/img/family.jpg
+image: assets/img/vail-neighbors-cover.jpg
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
