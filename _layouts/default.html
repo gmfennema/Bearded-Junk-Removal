@@ -213,6 +213,85 @@
         <p>Email: <a href="mailto:reevesmanagementsolutions@gmail.com">reevesmanagementsolutions@gmail.com</a></p>
         <p>Phone: <a href="tel:15202701610">(520) 270-1610</a></p>
       </div>
+      <div class="site-footer__social">
+        <p class="site-footer__title">Follow us</p>
+        <div class="social-links" aria-label="Social media links">
+          <a class="social-link social-link--tiktok"
+            href="{{ site.social.tiktok | default: '#' }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok">
+            <span class="social-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path d="M14 3.5c.8 2.1 2.4 3.5 4.5 3.7v3.2c-1.6-.1-3.1-.6-4.3-1.5V16a5.5 5.5 0 1 1-5.5-5.5c.3 0 .7 0 1 .1v3.4c-.3-.1-.6-.1-1-.1a2.1 2.1 0 1 0 2.1 2.1V3.5H14z" />
+              </svg>
+            </span>
+            <span class="social-link__text">TikTok</span>
+          </a>
+          <a class="social-link social-link--youtube"
+            href="{{ site.social.youtube | default: '#' }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube">
+            <span class="social-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path d="M21.8 7.6c-.2-1-1-1.8-2-2C18 5.2 12 5.2 12 5.2s-6 0-7.8.4c-1 .2-1.8 1-2 2C1.8 9.3 1.8 12 1.8 12s0 2.7.4 4.4c.2 1 1 1.8 2 2 1.8.4 7.8.4 7.8.4s6 0 7.8-.4c1-.2 1.8-1 2-2 .4-1.7.4-4.4.4-4.4s0-2.7-.4-4.4zM9.6 15.2V8.8L15.1 12l-5.5 3.2z" />
+              </svg>
+            </span>
+            <span class="social-link__text">YouTube</span>
+          </a>
+          <a class="social-link social-link--facebook"
+            href="{{ site.social.facebook | default: '#' }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook">
+            <span class="social-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path d="M14.2 8.2h2V5.5h-2.3c-2.8 0-4.2 1.6-4.2 4v1.8H7.5v2.9h2.2v5.8h3V14h2.5l.4-2.9h-2.9V9.9c0-.8.3-1.7 1.5-1.7z" />
+              </svg>
+            </span>
+            <span class="social-link__text">Facebook</span>
+          </a>
+          <a class="social-link social-link--instagram"
+            href="{{ site.social.instagram | default: '#' }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram">
+            <span class="social-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <rect x="5" y="5" width="14" height="14" rx="4" ry="4" fill="none" />
+                <circle cx="12" cy="12" r="3.2" fill="none" />
+                <circle cx="16.4" cy="7.6" r="1" fill="currentColor" />
+              </svg>
+            </span>
+            <span class="social-link__text">Instagram</span>
+          </a>
+          <a class="social-link social-link--x"
+            href="{{ site.social.x | default: '#' }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X">
+            <span class="social-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path d="M5 5h3.3l4 5.4L17 5h2l-5.8 7.1L19 19h-3.3l-4.5-6-4.8 6h-2l6.2-7.6L5 5z" />
+              </svg>
+            </span>
+            <span class="social-link__text">X</span>
+          </a>
+          <a class="social-link social-link--nextdoor"
+            href="{{ site.social.nextdoor | default: '#' }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Nextdoor">
+            <span class="social-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                <path d="M12 4.2 4.6 10v1.8h1.9v8h3.5v-5.2h3.9v5.2h3.5v-8h1.9V10L12 4.2z" />
+              </svg>
+            </span>
+            <span class="social-link__text">Nextdoor</span>
+          </a>
+        </div>
+      </div>
       <div class="site-footer__meta">
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
       </div>

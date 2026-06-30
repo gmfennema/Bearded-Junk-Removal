@@ -5,6 +5,13 @@ url: "https://beardedjunkremoval.com"
 baseurl: ""
 logo: /assets/img/logo.png
 image: assets/img/vail-neighbors-cover.jpg
+social:
+  tiktok: "https://www.tiktok.com/@beardedjunkremoval?_r=1&_t=ZT-97d5TyW8xPK"
+  youtube: "https://youtube.com/@beardedjunkremoval?si=NGOLrHRwAx27a6bt"
+  facebook: "https://www.facebook.com/share/1Bovqzvk7B/?mibextid=wwXIfr"
+  instagram: "https://www.instagram.com/beardedjunkremoval?igsh=bW9hN2tpMmExZXlp&utm_source=qr"
+  x: "https://x.com/junk_removal_?s=21"
+  nextdoor: "https://nextdoor.com/page/bearded-junk-removal-tucson-az?share_platform=10&utm_campaign=1782781602265&share_action_id=961bdfc8-0b08-4dd3-a534-3c0205e853d7"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
