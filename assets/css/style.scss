@@ -929,71 +929,80 @@ img {
 .social-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem;
+  gap: 0.9rem;
 }
 
 .social-link {
-  display: inline-flex;
+  display: inline-grid;
   align-items: center;
-  gap: 0.7rem;
-  min-height: 2.8rem;
-  padding: 0.35rem 0.85rem 0.35rem 0.35rem;
-  border-radius: 999px;
+  justify-items: center;
+  width: 4.75rem;
+  height: 4.75rem;
+  border-radius: 1.1rem;
   color: white;
   text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.08);
-  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.1);
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease,
+    box-shadow 0.18s ease;
 
   &:hover,
   &:focus-visible {
-    transform: translateY(-1px);
-    background: rgba(255, 255, 255, 0.13);
-    border-color: rgba(255, 255, 255, 0.24);
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.28);
     color: white;
+    box-shadow: 0 18px 28px rgba(15, 23, 42, 0.14);
+    filter: brightness(1.08);
   }
 }
 
 .social-link__icon {
-  width: 2rem;
-  height: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
   display: grid;
   place-items: center;
-  border-radius: 999px;
   color: white;
   flex-shrink: 0;
+  background: none;
 
   svg {
-    width: 1rem;
-    height: 1rem;
+    width: 1.8rem;
+    height: 1.8rem;
     display: block;
     fill: currentColor;
     stroke: currentColor;
-    stroke-width: 1.8;
+    stroke-width: 1.65;
     stroke-linecap: round;
     stroke-linejoin: round;
   }
 }
 
-.social-link__text {
-  font-size: 0.92rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-.social-link--tiktok .social-link__icon {
+.social-link--tiktok {
   background: #111111;
 }
 
-.social-link--youtube .social-link__icon {
+.social-link--youtube {
   background: #ff0000;
 }
 
-.social-link--facebook .social-link__icon {
+.social-link--facebook {
   background: #1877f2;
 }
 
-.social-link--instagram .social-link__icon {
+.social-link--instagram {
   background: linear-gradient(135deg, #f58529 0%, #dd2a7b 55%, #8134af 100%);
 }
 
@@ -1001,11 +1010,11 @@ img {
   fill: none;
 }
 
-.social-link--x .social-link__icon {
+.social-link--x {
   background: #000000;
 }
 
-.social-link--nextdoor .social-link__icon {
+.social-link--nextdoor {
   background: #00a651;
 }
 
